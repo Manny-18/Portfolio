@@ -320,6 +320,8 @@ img
     header ul li a
     {
         color:#111;
+        font-size: 25px;
+        margin: 10px;
     }
     .toggle
     {
