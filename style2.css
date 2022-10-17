@@ -150,7 +150,7 @@ img
 {
     max-width: 100%;
 }
-.services
+.skills
 {
     background: #111;    
 }
@@ -158,14 +158,14 @@ img
 {
     color: #fff;
 }
-.services .content
+.skills .content
 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
-.services .content .servicesBx
+.skills .content .skillsBx
 {
     padding: 40px 20px;
     background: #222;
@@ -175,16 +175,16 @@ img
     text-align: center;
     transition: 0.5s;
 }
-.services .content .servicesBx:hover
+.skills .content .skillsBx:hover
 {
     background: #2196f3;
 }
-.services .content .servicesBx img
+.skills .content .skillsBx img
 {
     max-width: 80px;
     filter: invert(1);
 }
-.services .content .servicesBx h2
+.skills .content .skillsBx h2
 {
     font-size: 20px;
     font-weight: 600;
@@ -204,6 +204,35 @@ img
 {
     max-width: 100%;   
 }
+.education
+{
+    background: #f7f7f7;
+}
+.education .content
+{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.education .content .educationBx
+{
+    min-width: 100%;
+    /* max-width: calc(50%-40px);  */
+    padding: 60px 40px;
+    margin: 20px;
+    background:#2196f3;
+
+}
+
+.education .content .educationBx p
+{
+    color:#111;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+
 .contact
 {
    background: #111; 
@@ -393,7 +422,7 @@ img
     {
         margin-bottom: 20px;
     }
-    .services .content .workBx
+    .skills .content .workBx
     {
         margin: 10px;
     }
@@ -401,6 +430,13 @@ img
     {
         width: 100%;
         padding: 10px;
+    }
+    .education .content .educationBx
+    {
+        min-width: 50%;
+        padding: 60px 40px;
+        margin: 20px;
+        background:#2196f3;
     }
     .contactInfo
     {

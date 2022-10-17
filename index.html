@@ -14,8 +14,9 @@
         <ul class="menu">
             <li><a href="#home" onclick="toggleMenu();">Home</a></li>
             <li><a href="#about" onclick="toggleMenu();">About</a></li>
-            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
             <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#education" onclick="toggleMenu();">Education</a></li>
             <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
@@ -32,9 +33,9 @@
         </div>
         <div class="content">
             <div class="contentBx w50">
-                <h3>I'm a Front End Web Developer</h3>
-                <h3>Developer & Designer</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aperiam labore nostrum pariatur atque deleniti quo praesentium est, suscipit hic nobis quaerat voluptas quasi sint tenetur. Doloribus officia nostrum aspernatur illo nemo, optio cumque hic modi laborum rerum aliquid, totam, tenetur sit temporibus necessitatibus aut alias asperiores sed sapiente numquam?</p>
+                <h3>I'm a Front End Web Developer & Designer</h3>
+                <h3>CAT ASPIRANT</h3>
+                <p>I am currently pursuing my Bachelor's in CS Hons (from SGTB Khalsa College, Delhi University) but I am interested in doing MBA in future. My passion and thirst fuels the fire inside me to improve myself daily . Currently, I am preparing for CAT exam.<br><br><b>WILL PUT ALL MY POWER TO GET INTO TOP B-SCHOOL (IIM-A/B)</b></p>
             </div>
             <div class="w50">
                 <img src="aboutme.jpg" class="img">
@@ -42,41 +43,41 @@
             </div>
         </div>
     </section>
-    <section class="services" id="services">
+    <section class="skills" id="skills">
         <div class="heading white">
-            <h2>Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deserunt.</p>
+            <h2>Skills</h2>
+            
         </div>
         <div class="content">
-            <div class="servicesBx">
+            <div class="skillsBx">
             <img src="icon1.png" >
             <h2>Web Design</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, minus!</p>
+            <p>Creative website design skills.Can design static, dynamic and eCommerce websites.</p>
             </div>
-            <div class="servicesBx">
+            <div class="skillsBx">
                 <img src="icon2.png" >
-                <h2>Web Development</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, minus!</p>
+                <h2>Coding</h2>
+                <p>I have great knowledge of C , C++ , Java , Pyhton , HTML , CSS , Javascript</p>
             </div>
-            <div class="servicesBx">
+            <div class="skillsBx">
                 <img src="icon3.png" >
                 <h2>Android App</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, minus!</p>
+                <p>Android apps can be written using Kotlin, Java, and C++ languages using the Android software.</p>
             </div>
-            <div class="servicesBx">
+            <div class="skillsBx">
                 <img src="icon4.png" >
                 <h2>Photography</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, minus!</p>
+                <p>Passionate Photography skills.Make a good impact with superb pics.</p>
             </div>
-            <div class="servicesBx">
+            <div class="skillsBx">
                 <img src="icon5.png" >
                 <h2>Content Writer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, minus!</p>
+                <p>Used to write blogs.Wrote informative and engaging articles to help brands showcase their products</p>
             </div>
-            <div class="servicesBx">
+            <div class="skillsBx">
                 <img src="icon6.png" >
                 <h2>Video Editing</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, minus!</p>
+                <p>Proficient in video editing.Used to edit thumbnails and videos for my brother's youtube channel</p>
             </div>
 
         </div>
@@ -85,7 +86,7 @@
     <section class="work" id="work">
         <div class="heading">
             <h2>Latest Work/Projects</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deserunt.</p>
+        
         </div>
         <div class="content">
             <div class="workBx">
@@ -105,10 +106,34 @@
             <a href="#" class="btn">View More</a>
         </div>
     </section>
+
+    <section class="education" id="education">
+    <div class="heading ">
+        <h2>Education</h2>
+                 
+    </div>
+    <div class="content">
+        <div class="educationBx">
+        <p>SGTB Khalsa, University of Delhi
+            <br>Bachelor of Science in Computer Science (Hons Course)
+            <br>Expected Graduation - Apr 2024
+            <br>
+            <br>Jaspal Kaur Public School,  New Delhi - Mar 2021
+            <br>Senior Secondary - Non Medical
+            <br>Percentage: 96% (PCM)
+            <br>
+            <br>Jaspal Kaur Public School,  New Delhi - Mar 2019
+            <br>Matric
+            <br>Percentage: 93%
+        </p>
+        </div>
+    </div>
+    </section>
+
     <section class="contact" id="contact">
         <div class="heading white">
             <h2>Contact Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, suscipit!</p>            
+                    
         </div>
         <div class="content">
             <div class="contactInfo">
@@ -142,11 +167,11 @@
                 </div>
             </div>
             <div class="formBx">
-                <form>
+                <form onsubmit="sendEmail(); reset(); return false;">
                     <h3>Message Me</h3>
-                    <input type="text" name="" placeholder="Full Name">
-                    <input type="email" name="" placeholder="Email">
-                    <textarea placeholder="Your Message"></textarea>
+                    <input type="text" id="name" name="" placeholder="Full Name">
+                    <input type="email" id="email" name="" placeholder="Email">
+                    <textarea id="message" placeholder="Your Message"></textarea>
                     <input type="submit"
                     value="Send">
                 </form>
@@ -156,6 +181,7 @@
     <div class="copyright">
        <p>Copyright © 2022 Manav Verma. All Rights Reserved. </p>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript">
         window.addEventListener('scroll',function(){
             var header=document.querySelector('header');
@@ -166,6 +192,21 @@
             var menu= document.querySelector('.menu');
             menuToggle.classList.toggle('active');
             menu.classList.toggle('active');
+        }
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "manavv357@gmail.com",
+            Password : "M@nav2003",
+            To : 'manav0verma7@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enquiry",
+            Body : "Name: "+document.getElementById("name").value 
+            + "<br> Email: "+document.getElementById("email").value 
+            + "<br> Message: "+document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Succesfully")
+            );
         }
     </script>    
          
